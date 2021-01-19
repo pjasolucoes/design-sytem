@@ -1,0 +1,30 @@
+@import '../tokens/colors';
+@import '../tokens/typography';
+@import 'mixins/mixins';
+
+.p-tag {
+  @include tag-size($font-size-caption, 6px 12px);
+
+  &.small {
+    @include tag-size($font-size-tagline, 4px 8px);
+  }
+
+  &.large {
+    @include tag-size($font-size-xxs, 8px 16px);
+  }
+
+  //levels
+  @include tag-level($color-ui-info-lighter, $color-ui-info-default);
+
+  &.sucess {
+    @include tag-level($color-brand-primary-lighter, $color-brand-primary-default);
+  }
+
+  &.warning {
+    @include tag-level($color-ui-warning-lighter, $color-ui-warning-default);
+  }
+
+  &.danger {
+    @include tag-level($color-ui-danger-lighter, $color-ui-danger-default);
+  }
+}

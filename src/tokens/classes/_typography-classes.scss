@@ -1,0 +1,386 @@
+@import '../typography';
+@import 'mixins/mixins';
+
+.display-bold-medium {
+  @include type-set($font-size-display, $font-weight-bold, $line-height-medium);
+}
+
+.display-bold-distant {
+  @include type-set($font-size-display, $font-weight-bold, $line-height-distant);
+}
+
+.display-semibold-medium {
+  @include type-set($font-size-display, $font-weight-semibold, $line-height-medium);
+}
+
+.display-semibold-distant {
+  @include type-set($font-size-display, $font-weight-semibold, $line-height-distant);
+}
+
+.display-medium-medium {
+  @include type-set($font-size-display, $font-weight-medium, $line-height-medium);
+}
+
+.display-medium-distant {
+  @include type-set($font-size-display, $font-weight-medium, $line-height-distant);
+}
+
+.display-regular-medium {
+  @include type-set($font-size-display, $font-weight-regular, $line-height-medium);
+}
+
+.display-regular-distant {
+  @include type-set($font-size-display, $font-weight-regular, $line-height-distant);
+}
+
+.xxxl-bold-medium {
+  @include type-set($font-size-xxxl, $font-weight-bold, $line-height-medium);
+}
+
+.xxxl-bold-distant {
+  @include type-set($font-size-xxxl, $font-weight-bold, $line-height-distant);
+}
+
+.xxxl-semibold-medium {
+  @include type-set($font-size-xxxl, $font-weight-semibold, $line-height-medium);
+}
+
+.xxxl-semibold-distant {
+  @include type-set($font-size-xxxl, $font-weight-semibold, $line-height-distant);
+}
+
+.xxxl-medium-medium {
+  @include type-set($font-size-xxxl, $font-weight-medium, $line-height-medium);
+}
+
+.xxxl-medium-distant {
+  @include type-set($font-size-xxxl, $font-weight-medium, $line-height-distant);
+}
+
+.xxxl-regular-medium {
+  @include type-set($font-size-xxxl, $font-weight-regular, $line-height-medium);
+}
+
+.xxxl-regular-distant {
+  @include type-set($font-size-xxxl, $font-weight-regular, $line-height-distant);
+}
+
+.xxl-bold-medium {
+  @include type-set($font-size-xxl, $font-weight-bold, $line-height-medium);
+}
+
+.xxl-bold-distant {
+  @include type-set($font-size-xxl, $font-weight-bold, $line-height-distant);
+}
+
+.xxl-semibold-medium {
+  @include type-set($font-size-xxl, $font-weight-semibold, $line-height-medium);
+}
+
+.xxl-semibold-distant {
+  @include type-set($font-size-xxl, $font-weight-semibold, $line-height-distant);
+}
+
+.xxl-medium-medium {
+  @include type-set($font-size-xxl, $font-weight-medium, $line-height-medium);
+}
+
+.xxl-medium-distant {
+  @include type-set($font-size-xxl, $font-weight-medium, $line-height-distant);
+}
+
+.xxl-regular-medium {
+  @include type-set($font-size-xxl, $font-weight-regular, $line-height-medium);
+}
+
+.xxl-regular-distant {
+  @include type-set($font-size-xxl, $font-weight-regular, $line-height-distant);
+}
+
+.xl-bold-medium {
+  @include type-set($font-size-xl, $font-weight-bold, $line-height-medium);
+}
+
+.xl-bold-distant {
+  @include type-set($font-size-xl, $font-weight-bold, $line-height-distant);
+}
+
+.xl-semibold-medium {
+  @include type-set($font-size-xl, $font-weight-semibold, $line-height-medium);
+}
+
+.xl-semibold-distant {
+  @include type-set($font-size-xl, $font-weight-semibold, $line-height-distant);
+}
+
+.xl-medium-medium {
+  @include type-set($font-size-xl, $font-weight-medium, $line-height-medium);
+}
+
+.xl-medium-distant {
+  @include type-set($font-size-xl, $font-weight-medium, $line-height-distant);
+}
+
+.xl-regular-medium {
+  @include type-set($font-size-xl, $font-weight-regular, $line-height-medium);
+}
+
+.xl-regular-distant {
+  @include type-set($font-size-xl, $font-weight-regular, $line-height-distant);
+}
+
+.lg-bold-medium {
+  @include type-set($font-size-lg, $font-weight-bold, $line-height-medium);
+}
+
+.lg-bold-distant {
+  @include type-set($font-size-lg, $font-weight-bold, $line-height-distant);
+}
+
+.lg-semibold-medium {
+  @include type-set($font-size-lg, $font-weight-semibold, $line-height-medium);
+}
+
+.lg-semibold-distant {
+  @include type-set($font-size-lg, $font-weight-semibold, $line-height-distant);
+}
+
+.lg-medium-medium {
+  @include type-set($font-size-lg, $font-weight-medium, $line-height-medium);
+}
+
+.lg-medium-distant {
+  @include type-set($font-size-lg, $font-weight-medium, $line-height-distant);
+}
+
+.lg-regular-medium {
+  @include type-set($font-size-lg, $font-weight-regular, $line-height-medium);
+}
+
+.lg-regular-distant {
+  @include type-set($font-size-lg, $font-weight-regular, $line-height-distant);
+}
+
+.md-bold-medium {
+  @include type-set($font-size-md, $font-weight-bold, $line-height-medium);
+}
+
+.md-bold-distant {
+  @include type-set($font-size-md, $font-weight-bold, $line-height-distant);
+}
+
+.md-semibold-medium {
+  @include type-set($font-size-md, $font-weight-semibold, $line-height-medium);
+}
+
+.md-semibold-distant {
+  @include type-set($font-size-md, $font-weight-semibold, $line-height-distant);
+}
+
+.md-medium-medium {
+  @include type-set($font-size-md, $font-weight-medium, $line-height-medium);
+}
+
+.md-medium-distant {
+  @include type-set($font-size-md, $font-weight-medium, $line-height-distant);
+}
+
+.md-regular-medium {
+  @include type-set($font-size-md, $font-weight-regular, $line-height-medium);
+}
+
+.md-regular-distant {
+  @include type-set($font-size-md, $font-weight-regular, $line-height-distant);
+}
+
+.sm-bold-medium {
+  @include type-set($font-size-sm, $font-weight-bold, $line-height-medium);
+}
+
+.sm-bold-distant {
+  @include type-set($font-size-sm, $font-weight-bold, $line-height-distant);
+}
+
+.sm-semibold-medium {
+  @include type-set($font-size-sm, $font-weight-semibold, $line-height-medium);
+}
+
+.sm-semibold-distant {
+  @include type-set($font-size-sm, $font-weight-semibold, $line-height-distant);
+}
+
+.sm-medium-medium {
+  @include type-set($font-size-sm, $font-weight-medium, $line-height-medium);
+}
+
+.sm-medium-distant {
+  @include type-set($font-size-sm, $font-weight-medium, $line-height-distant);
+}
+
+.sm-regular-medium {
+  @include type-set($font-size-sm, $font-weight-regular, $line-height-medium);
+}
+
+.sm-regular-distant {
+  @include type-set($font-size-sm, $font-weight-regular, $line-height-distant);
+}
+
+.xs-bold-medium {
+  @include type-set($font-size-xs, $font-weight-bold, $line-height-medium);
+}
+
+.xs-bold-distant {
+  @include type-set($font-size-xs, $font-weight-bold, $line-height-distant);
+}
+
+.xs-semibold-medium {
+  @include type-set($font-size-xs, $font-weight-semibold, $line-height-medium);
+}
+
+.xs-semibold-distant {
+  @include type-set($font-size-xs, $font-weight-semibold, $line-height-distant);
+}
+
+.xs-medium-medium {
+  @include type-set($font-size-xs, $font-weight-medium, $line-height-medium);
+}
+
+.xs-medium-distant {
+  @include type-set($font-size-xs, $font-weight-medium, $line-height-distant);
+}
+
+.xs-regular-medium {
+  @include type-set($font-size-xs, $font-weight-regular, $line-height-medium);
+}
+
+.xs-regular-distant {
+  @include type-set($font-size-xs, $font-weight-regular, $line-height-distant);
+}
+
+.xxs-bold-medium {
+  @include type-set($font-size-xxs, $font-weight-bold, $line-height-medium);
+}
+
+.xxs-bold-distant {
+  @include type-set($font-size-xxs, $font-weight-bold, $line-height-distant);
+}
+
+.xxs-semibold-medium {
+  @include type-set($font-size-xxs, $font-weight-semibold, $line-height-medium);
+}
+
+.xxs-semibold-distant {
+  @include type-set($font-size-xxs, $font-weight-semibold, $line-height-distant);
+}
+
+.xxs-medium-medium {
+  @include type-set($font-size-xxs, $font-weight-medium, $line-height-medium);
+}
+
+.xxs-medium-distant {
+  @include type-set($font-size-xxs, $font-weight-medium, $line-height-distant);
+}
+
+.xxs-regular-medium {
+  @include type-set($font-size-xxs, $font-weight-regular, $line-height-medium);
+}
+
+.xxs-regular-distant {
+  @include type-set($font-size-xxs, $font-weight-regular, $line-height-distant);
+}
+
+.xxxs-bold-medium {
+  @include type-set($font-size-xxxs, $font-weight-bold, $line-height-medium);
+}
+
+.xxxs-bold-distant {
+  @include type-set($font-size-xxxs, $font-weight-bold, $line-height-distant);
+}
+
+.xxxs-semibold-medium {
+  @include type-set($font-size-xxxs, $font-weight-semibold, $line-height-medium);
+}
+
+.xxxs-semibold-distant {
+  @include type-set($font-size-xxxs, $font-weight-semibold, $line-height-distant);
+}
+
+.xxxs-medium-medium {
+  @include type-set($font-size-xxxs, $font-weight-medium, $line-height-medium);
+}
+
+.xxxs-medium-distant {
+  @include type-set($font-size-xxxs, $font-weight-medium, $line-height-distant);
+}
+
+.xxxs-regular-medium {
+  @include type-set($font-size-xxxs, $font-weight-regular, $line-height-medium);
+}
+
+.xxxs-regular-distant {
+  @include type-set($font-size-xxxs, $font-weight-regular, $line-height-distant);
+}
+
+.caption-bold-medium {
+  @include type-set($font-size-caption, $font-weight-bold, $line-height-medium);
+}
+
+.caption-bold-distant {
+  @include type-set($font-size-caption, $font-weight-bold, $line-height-distant);
+}
+
+.caption-semibold-medium {
+  @include type-set($font-size-caption, $font-weight-semibold, $line-height-medium);
+}
+
+.caption-semibold-distant {
+  @include type-set($font-size-caption, $font-weight-semibold, $line-height-distant);
+}
+
+.caption-medium-medium {
+  @include type-set($font-size-caption, $font-weight-medium, $line-height-medium);
+}
+
+.caption-medium-distant {
+  @include type-set($font-size-caption, $font-weight-medium, $line-height-distant);
+}
+
+.caption-regular-medium {
+  @include type-set($font-size-caption, $font-weight-regular, $line-height-medium);
+}
+
+.caption-regular-distant {
+  @include type-set($font-size-caption, $font-weight-regular, $line-height-distant);
+}
+
+.tagline-bold-medium {
+  @include type-set($font-size-tagline, $font-weight-bold, $line-height-medium);
+}
+
+.tagline-bold-distant {
+  @include type-set($font-size-tagline, $font-weight-bold, $line-height-distant);
+}
+
+.tagline-semibold-medium {
+  @include type-set($font-size-tagline, $font-weight-semibold, $line-height-medium);
+}
+
+.tagline-semibold-distant {
+  @include type-set($font-size-tagline, $font-weight-semibold, $line-height-distant);
+}
+
+.tagline-medium-medium {
+  @include type-set($font-size-tagline, $font-weight-medium, $line-height-medium);
+}
+
+.tagline-medium-distant {
+  @include type-set($font-size-tagline, $font-weight-medium, $line-height-distant);
+}
+
+.tagline-regular-medium {
+  @include type-set($font-size-tagline, $font-weight-regular, $line-height-medium);
+}
+
+.tagline-regular-distant {
+  @include type-set($font-size-tagline, $font-weight-regular, $line-height-distant);
+}

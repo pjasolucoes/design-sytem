@@ -1,0 +1,46 @@
+@import '../../spacing';
+
+@mixin spacing($spacing) {
+  //  Padding spacing
+  &.--padding-all {
+    padding: $spacing;
+  }
+
+  &.--padding-left {
+    padding-left: $spacing;
+  }
+
+  &.--padding-right {
+    padding-right: $spacing;
+  }
+
+  &.--padding-top {
+    padding-top: $spacing;
+  }
+
+  &.--padding-bottom {
+    padding-bottom: $spacing;
+  }
+
+  // Margin spacing
+
+  &.--margin-all {
+    margin: $spacing;
+  }
+
+  &.--margin-left {
+    margin-left: $spacing;
+  }
+
+  &.--margin-right {
+    margin-right: $spacing;
+  }
+
+  &.--margin-top {
+    margin-top: $spacing;
+  }
+
+  &.--margin-bottom {
+    margin-bottom: $spacing;
+  }
+}

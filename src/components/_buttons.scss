@@ -1,0 +1,37 @@
+@import '../tokens/colors';
+@import 'mixins/mixins';
+
+.p-button {
+  @include button(
+    $color-brand-primary-default,
+    $color-brand-primary-dark,
+    $color-brand-primary-default,
+    $color-brand-primary-darker,
+    $color-gray-background-disabled
+  );
+
+  &.secondary {
+    @include button(
+      $color-brand-primary-lighter,
+      $color-brand-primary-default,
+      $color-brand-primary-default,
+      $color-brand-primary-darker,
+      $color-brand-primary-lighter,
+      $color-brand-primary-default,
+      rgba($color-brand-primary-default, $opacity-level-shadow),
+      #fff
+    );
+  }
+
+  &.tertiary {
+    @include button(
+      $color-gray-background-lighter,
+      $color-gray-background-light,
+      $color-gray-background-lighter,
+      $color-gray-background-default,
+      $color-gray-background-lighter,
+      $color-gray-text-default,
+      $color-gray-background-disabled
+    );
+  }
+}

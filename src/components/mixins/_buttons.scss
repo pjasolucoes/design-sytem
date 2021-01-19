@@ -1,0 +1,78 @@
+@import '../../tokens/typography';
+
+@mixin button-size($padding, $min, $height, $font-size) {
+  padding: $padding;
+  min-width: $min;
+  height: $height;
+  font-size: $font-size;
+}
+
+@mixin button(
+  $background,
+  $hover,
+  $focus-border-color,
+  $active,
+  $disable-background: $background,
+  $color: #fff,
+  $disable-color: $color,
+  $hover-color: $color
+) {
+  margin: 2px;
+  min-width: 88px;
+  height: 40px;
+  background: $background;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border: none;
+  border-radius: $border-radius-md;
+
+  line-height: $line-height-distant;
+  font-size: $font-size-xxs;
+  font-weight: $font-weight-medium;
+
+  color: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-icon,
+  .icon {
+    margin-left: $spacing-xs;
+    height: 20px;
+    width: 20px;
+  }
+
+  &:hover {
+    background: $hover;
+    color: $hover-color;
+    transition: all 0.3s;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px rgba($focus-border-color, $opacity-level-shadow);
+  }
+
+  &:active {
+    background: $active;
+  }
+
+  &:disabled {
+    background: $disable-background;
+    color: $disable-color;
+    cursor: not-allowed;
+  }
+
+  &.cta {
+    @include button-size(16px 32px, 120px, 56px, $font-size-xs);
+  }
+
+  &.large {
+    @include button-size(14px 28px 16px 28px, 104px, 48px, $font-size-xxs);
+  }
+
+  &.small {
+    @include button-size(7px 14px, 72px, 32px, $font-size-xxxs);
+  }
+}

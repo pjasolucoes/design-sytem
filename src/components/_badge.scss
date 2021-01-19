@@ -1,0 +1,47 @@
+@import '../tokens/typography';
+@import 'mixins/mixins';
+
+.p-badge {
+  @include badge-size($font-size-caption, 5px 12px);
+
+  &.small {
+    @include badge-size($font-size-tagline, 4px 10px);
+  }
+
+  &.large {
+    @include badge-size($font-size-xxs, 7px 16px);
+  }
+
+  //levels
+  @include badge-level($color-ui-info-default, $color-ui-info-lighter);
+
+  &.sucess {
+    @include badge-level($color-brand-primary-default, $color-brand-primary-lighter);
+  }
+
+  &.warning {
+    @include badge-level($color-ui-warning-default, $color-ui-warning-lighter);
+    color: #000;
+  }
+
+  &.danger {
+    @include badge-level($color-ui-danger-default, $color-ui-danger-lighter);
+  }
+
+  &.variant {
+    background: $color-gray-text-darker;
+    color: #fff;
+    border: 1px solid $color-gray-text-darker;
+    box-sizing: border-box;
+
+    &.secondary {
+      color: $color-gray-text-darker;
+      background: transparent;
+      border: $border-width-hairline $color-gray-background-lighter;
+    }
+  }
+
+  &.variant2 {
+    @include badge-level($color-brand-secondary-default, $color-brand-secondary-lighter);
+  }
+}

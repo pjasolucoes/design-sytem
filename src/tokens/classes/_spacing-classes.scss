@@ -1,0 +1,38 @@
+@import '../spacing';
+@import 'mixins/mixins';
+
+.spacing-xxxs {
+  @include spacing($spacing-xxxs);
+}
+
+.spacing-xxs {
+  @include spacing($spacing-xxs);
+}
+
+.spacing-xs {
+  @include spacing($spacing-xs);
+}
+
+.spacing-sm {
+  @include spacing($spacing-sm);
+}
+
+.spacing-md {
+  @include spacing($spacing-md);
+}
+
+.spacing-lg {
+  @include spacing($spacing-lg);
+}
+
+.spacing-xl {
+  @include spacing($spacing-xl);
+}
+
+.spacing-xxl {
+  @include spacing($spacing-xxl);
+}
+
+.spacing-xxxl {
+  @include spacing($spacing-xxxl);
+}

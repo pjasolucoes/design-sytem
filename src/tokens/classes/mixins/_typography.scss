@@ -1,0 +1,8 @@
+@import '../../typography';
+
+// Type-set
+@mixin type-set($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
