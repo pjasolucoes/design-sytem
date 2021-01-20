@@ -27,4 +27,12 @@
   &.danger {
     @include tag-level($color-ui-danger-lighter, $color-ui-danger-default);
   }
+
+  &.variant2 {
+    @include tag-level($color-brand-secondary-default, $color-brand-secondary-lighter);
+  }
+
+  &.disabled {
+    @include tag-level($color-gray-background-disabled, $color-gray-background-lighter)
+  }
 }
