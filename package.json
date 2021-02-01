@@ -1,11 +1,14 @@
 {
   "name": "design-system",
   "description": "Design system da PJA",
-  "version": "0.1.3-0",
+  "version": "0.1.4-0",
   "private": true,
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
     "watch": "sass --watch src/design-system.scss dist/design-system.css  --style compressed",
     "bump-version": "yarn version --prepatch && git push --tags"
+  },
+  "dependencies": {
+    "sass": "^1.32.5"
   }
 }
