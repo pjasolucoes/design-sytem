@@ -23,5 +23,11 @@
     background: rgba($color-1, 0.70);
     color: $color-2;
     border: rgba($color-1, 0.70);
+
+    &.secondary {
+      background: rgba($color-2, 0.70);
+      color: $color-1;
+      border: rgba($color-2, 0.70);
+    }
   }
 }
