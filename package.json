@@ -1,7 +1,7 @@
 {
   "name": "design-system",
   "description": "Design system da PJA",
-  "version": "0.1.6-0",
+  "version": "0.1.7-0",
   "private": true,
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
