@@ -10,12 +10,18 @@
 @mixin chip-level($color-1, $color-2: #fff, $border-color: $color-1) {
   background: $color-1;
   color: $color-2;
-  border: 1px solid $border-color;
+  border: $border-width-hairline $border-color;
   box-sizing: border-box;
 
   &.secondary {
     color: $color-1;
     background: $color-2;
     border: $color-2;
+  }
+
+  &.selected {
+    background: rgba($color-1, 0.16);
+    color: $color-2;
+    border: rgba($color-1, 0.16);
   }
 }
