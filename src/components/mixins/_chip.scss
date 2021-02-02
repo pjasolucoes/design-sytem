@@ -1,0 +1,22 @@
+@mixin chip-size($font-size, $padding) {
+  padding: $padding;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size;
+  border-radius: $border-radius-pill;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 2px;
+}
+
+@mixin chip-level($color-1, $color-2: #fff, $border-color: $color-1) {
+  background: $color-1;
+  color: $color-2;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+
+  &.secondary {
+    color: $color-1;
+    background: $color-2;
+    border: $color-2;
+  }
+}
