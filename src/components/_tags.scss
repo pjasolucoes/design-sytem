@@ -29,7 +29,7 @@
   }
 
   &.variant2 {
-    @include tag-level($color-brand-secondary-default, $color-brand-secondary-lighter);
+    @include tag-level($color-brand-secondary-lighter, $color-brand-secondary-default);
   }
 
   &.disabled {
