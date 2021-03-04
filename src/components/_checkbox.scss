@@ -8,8 +8,8 @@ input[type='checkbox'].p-checkbox {
   border: $border-width-hairline $color-gray-background-disabled;
   background: #fff;
   border-radius: 2px;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   transition: all 0.15s;
   cursor: pointer;
 
