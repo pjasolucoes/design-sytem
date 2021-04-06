@@ -33,6 +33,6 @@
   }
 
   &.disabled {
-    @include tag-level($color-gray-background-disabled, $color-gray-background-lighter)
+    @include tag-level($color-gray-background-lighter, $color-gray-background-disabled)
   }
 }
