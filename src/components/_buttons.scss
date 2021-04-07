@@ -34,4 +34,14 @@
       $color-gray-background-disabled
     );
   }
+
+  &.danger {
+    @include button(
+      $color-ui-danger-default,
+      #ff1c37,
+      #ff1c37,
+      #ff1c37,
+        $color-ui-danger-lighter,
+    )
+  }
 }
