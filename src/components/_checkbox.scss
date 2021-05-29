@@ -35,11 +35,11 @@ input[type='checkbox'].p-checkbox {
 
   &:disabled { 
     cursor: not-allowed;
-    background: $color-gray-background-disabled;
+    background: $color-gray-background-lighter;
 
 
     &:checked { 
-      background-color: $color-brand-primary-default;
+      background-color: $color-brand-primary-light;
     }
   }
 
