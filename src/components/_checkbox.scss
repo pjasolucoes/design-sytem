@@ -33,6 +33,16 @@ input[type='checkbox'].p-checkbox {
     }
   }
 
+  &:disabled { 
+    cursor: not-allowed;
+    background: $color-gray-background-disabled;
+
+
+    &:checked { 
+      background-color: $color-brand-primary-default;
+    }
+  }
+
   &.--check-in-line {
       &:checked {
       background: $color-brand-primary-default;
