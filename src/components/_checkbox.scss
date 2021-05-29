@@ -40,6 +40,7 @@ input[type='checkbox'].p-checkbox {
 
     &:checked { 
       background-color: $color-brand-primary-light;
+      border-color: $color-brand-primary-light;
     }
   }
 
