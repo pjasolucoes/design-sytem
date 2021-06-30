@@ -1,9 +1,15 @@
-@import '../opacity';
-
 .opacity-level-intense {
   opacity: $opacity-level-intense;
 }
 
 .opacity-level-shadow {
   opacity: $opacity-level-shadow;
+}
+
+.opacity-level-semiopaque {
+  opacity: $opacity-level-semiopaque;
+}
+
+.opacity-level-light {
+  opacity: $opacity-level-light;
 }

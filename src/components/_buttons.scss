@@ -1,8 +1,12 @@
-@import '../tokens/colors';
 @import 'mixins/mixins';
 
 .p-button {
+  // Primary button
   @include button(
+    10px 20px,
+    88px,
+    40px,
+    $font-size-xxs,
     $color-brand-primary-default,
     $color-brand-primary-dark,
     $color-brand-primary-default,
@@ -10,8 +14,55 @@
     $color-gray-background-disabled
   );
 
-  &.secondary {
+  &--cta {
     @include button(
+      16px 32px,
+      120px,
+      56px,
+      $font-size-xs,
+      $color-brand-primary-default,
+      $color-brand-primary-dark,
+      $color-brand-primary-default,
+      $color-brand-primary-darker,
+      $color-gray-background-disabled
+    );
+  }
+
+  &--large {
+    @include button(
+      14px 28px 16px 28px,
+      104px,
+      48px,
+      $font-size-xxs,
+      $color-brand-primary-default,
+      $color-brand-primary-dark,
+      $color-brand-primary-default,
+      $color-brand-primary-darker,
+      $color-gray-background-disabled
+    );
+  }
+
+  &--small {
+    @include button(
+      7px 14px,
+      72px,
+      32px,
+      $font-size-xxxs,
+      $color-brand-primary-default,
+      $color-brand-primary-dark,
+      $color-brand-primary-default,
+      $color-brand-primary-darker,
+      $color-gray-background-disabled
+    );
+  }
+
+  // Secondary button
+  &__secondary {
+    @include button(
+      10px 20px,
+      88px,
+      40px,
+      $font-size-xxs,
       $color-brand-primary-lighter,
       $color-brand-primary-default,
       $color-brand-primary-default,
@@ -21,10 +72,66 @@
       rgba($color-brand-primary-default, $opacity-level-shadow),
       #fff
     );
+
+    &--cta {
+      @include button(
+        16px 32px,
+        120px,
+        56px,
+        $font-size-xs,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        $color-brand-primary-default,
+        $color-brand-primary-darker,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        rgba($color-brand-primary-default, $opacity-level-shadow),
+        #fff
+      );
+    }
+
+    &--large {
+      @include button(
+        14px 28px 16px 28px,
+        104px,
+        48px,
+        $font-size-xxs,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        $color-brand-primary-default,
+        $color-brand-primary-darker,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        rgba($color-brand-primary-default, $opacity-level-shadow),
+        #fff
+      );
+    }
+
+    &--small {
+      @include button(
+        7px 14px,
+        72px,
+        32px,
+        $font-size-xxxs,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        $color-brand-primary-default,
+        $color-brand-primary-darker,
+        $color-brand-primary-lighter,
+        $color-brand-primary-default,
+        rgba($color-brand-primary-default, $opacity-level-shadow),
+        #fff
+      );
+    }
   }
 
-  &.tertiary {
+  // Tertiary button
+  &__tertiary {
     @include button(
+      10px 20px,
+      88px,
+      40px,
+      $font-size-xxs,
       $color-gray-background-lighter,
       $color-gray-background-light,
       $color-gray-background-lighter,
@@ -33,15 +140,224 @@
       $color-gray-text-default,
       $color-gray-background-disabled
     );
+
+    &--cta {
+      @include button(
+        16px 32px,
+        120px,
+        56px,
+        $font-size-xs,
+        $color-gray-background-lighter,
+        $color-gray-background-light,
+        $color-gray-background-lighter,
+        $color-gray-background-default,
+        $color-gray-background-lighter,
+        $color-gray-text-default,
+        $color-gray-background-disabled
+      );
+    }
+
+    &--large {
+      @include button(
+        14px 28px 16px 28px,
+        104px,
+        48px,
+        $font-size-xxs,
+        $color-gray-background-lighter,
+        $color-gray-background-light,
+        $color-gray-background-lighter,
+        $color-gray-background-default,
+        $color-gray-background-lighter,
+        $color-gray-text-default,
+        $color-gray-background-disabled
+      );
+    }
+
+    &--small {
+      @include button(
+        7px 14px,
+        72px,
+        32px,
+        $font-size-xxxs,
+        $color-gray-background-lighter,
+        $color-gray-background-light,
+        $color-gray-background-lighter,
+        $color-gray-background-default,
+        $color-gray-background-lighter,
+        $color-gray-text-default,
+        $color-gray-background-disabled
+      );
+    }
   }
 
-  &.danger {
+  // Danger button
+  &__danger {
     @include button(
+      10px 20px,
+      88px,
+      40px,
+      $font-size-xxs,
       $color-ui-danger-default,
-      #ff1c37,
-      #ff1c37,
-      #ff1c37,
-        $color-ui-danger-lighter,
-    )
+      rgba($color-ui-danger-default, $opacity-level-semiopaque),
+      rgba($color-ui-danger-default, $opacity-level-semiopaque),
+      rgba($color-ui-danger-default, $opacity-level-semiopaque),
+      rgba($color-ui-danger-default, $opacity-level-semiopaque)
+    );
+
+    &--cta {
+      @include button(
+        16px 32px,
+        120px,
+        56px,
+        $font-size-xs,
+        $color-ui-danger-default,
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--large {
+      @include button(
+        14px 28px 16px 28px,
+        104px,
+        48px,
+        $font-size-xxs,
+        $color-ui-danger-default,
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--small {
+      @include button(
+        7px 14px,
+        72px,
+        32px,
+        $font-size-xxxs,
+        $color-ui-danger-default,
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque),
+        rgba($color-ui-danger-default, $opacity-level-semiopaque)
+      );
+    }
+  }
+
+  // Warning button
+  &__warning {
+    @include button(
+      10px 20px,
+      88px,
+      40px,
+      $font-size-xxs,
+      $color-ui-warning-default,
+      rgba($color-ui-warning-default, $opacity-level-semiopaque),
+      rgba($color-ui-warning-default, $opacity-level-semiopaque),
+      rgba($color-ui-warning-default, $opacity-level-semiopaque),
+      rgba($color-ui-warning-default, $opacity-level-semiopaque)
+    );
+
+    &--cta {
+      @include button(
+        16px 32px,
+        120px,
+        56px,
+        $font-size-xs,
+        $color-ui-warning-default,
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--large {
+      @include button(
+        14px 28px 16px 28px,
+        104px,
+        48px,
+        $font-size-xxs,
+        $color-ui-warning-default,
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--small {
+      @include button(
+        7px 14px,
+        72px,
+        32px,
+        $font-size-xxxs,
+        $color-ui-warning-default,
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque),
+        rgba($color-ui-warning-default, $opacity-level-semiopaque)
+      );
+    }
+  }
+
+  // Info button
+  &__info {
+    @include button(
+      10px 20px,
+      88px,
+      40px,
+      $font-size-xxs,
+      $color-ui-info-default,
+      rgba($color-ui-info-default, $opacity-level-semiopaque),
+      rgba($color-ui-info-default, $opacity-level-semiopaque),
+      rgba($color-ui-info-default, $opacity-level-semiopaque),
+      rgba($color-ui-info-default, $opacity-level-semiopaque)
+    );
+
+    &--cta {
+      @include button(
+        16px 32px,
+        120px,
+        56px,
+        $font-size-xs,
+        $color-ui-info-default,
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--large {
+      @include button(
+        14px 28px 16px 28px,
+        104px,
+        48px,
+        $font-size-xxs,
+        $color-ui-info-default,
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque)
+      );
+    }
+
+    &--small {
+      @include button(
+        7px 14px,
+        72px,
+        32px,
+        $font-size-xxxs,
+        $color-ui-info-default,
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque),
+        rgba($color-ui-info-default, $opacity-level-semiopaque)
+      );
+    }
   }
 }

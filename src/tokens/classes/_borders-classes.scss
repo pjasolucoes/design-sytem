@@ -1,41 +1,39 @@
-@import '../borders';
-@import '../colors';
 @import 'mixins/mixins';
 
 .p-border {
   // Border Radius
 
-  &.--radius-sm {
+  &-radius-sm {
     @include border-radius($border-radius-sm);
   }
 
-  &.--radius-md {
+  &-radius-md {
     @include border-radius($border-radius-md);
   }
 
-  &.--radius-lg {
+  &-radius-lg {
     @include border-radius($border-radius-lg);
   }
 
-  &.--radius-pill {
+  &-radius-pill {
     @include border-radius($border-radius-pill);
   }
 
-  &.--radius-circular {
+  &-radius-circular {
     @include border-radius($border-radius-circular);
   }
 
   // Border width
 
-  &.--width-hairline {
+  &-width-hairline {
     @include border-width($border-width-hairline);
   }
 
-  &.--width-thin {
+  &-width-thin {
     @include border-width($border-width-thin);
   }
 
-  &.--width-medium {
+  &-width-medium {
     @include border-width($border-width-medium);
   }
 }

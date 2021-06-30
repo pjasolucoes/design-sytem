@@ -1,7 +1,7 @@
 @mixin colors($color) {
   color: $color;
 
-  &.--background {
+  &--background {
     background: $color;
   }
 }

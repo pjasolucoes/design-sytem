@@ -1,5 +1,3 @@
-@import '../../tokens/typography';
-
 @mixin button-size($padding, $min, $height, $font-size) {
   padding: $padding;
   min-width: $min;
@@ -8,6 +6,10 @@
 }
 
 @mixin button(
+  $padding,
+  $min-width,
+  $height,
+  $font-size,
   $background,
   $hover,
   $focus-border-color,
@@ -18,10 +20,10 @@
   $hover-color: $color
 ) {
   margin: 2px;
-  min-width: 88px;
-  height: 40px;
+  min-width: $min-width;
+  height: $height;
   background: $background;
-  padding: 10px 20px;
+  padding: $padding;
   white-space: nowrap;
   overflow: hidden;
   cursor: pointer;
@@ -30,7 +32,7 @@
   border-radius: $border-radius-md;
 
   line-height: $line-height-distant;
-  font-size: $font-size-xxs;
+  font-size: $font-size;
   font-weight: $font-weight-medium;
 
   color: $color;
@@ -44,7 +46,7 @@
     height: 20px;
     width: 20px;
   }
-  
+
   .icon-font {
     margin-left: $spacing-xs;
     height: 15px;
