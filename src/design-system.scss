@@ -1,8 +1,13 @@
+// Core
+@import 'core/reset';
+
+// Mixins
+@import 'components/mixins/mixins';
+
 // Tokens
 @import 'tokens/borders';
 @import 'tokens/boxshadow';
 @import 'tokens/colors';
-@import 'tokens/font';
 @import 'tokens/opacity';
 @import 'tokens/spacing';
 @import 'tokens/typography';
@@ -22,4 +27,3 @@
 @import 'components/radio';
 @import 'components/tags';
 @import 'components/chip';
-

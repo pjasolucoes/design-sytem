@@ -7,7 +7,13 @@
   margin: 2px;
 }
 
-@mixin chip-level($color-1, $color-2: #fff, $border-color: $color-1) {
+@mixin chip-level($font-size, $padding, $color-1, $color-2: #fff, $border-color: $color-1) {
+  padding: $padding;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size;
+  border-radius: $border-radius-pill;
+  white-space: nowrap;
+  margin: 2px;
   background: $color-1;
   color: $color-2;
   border: $border-width-hairline $border-color;
@@ -20,14 +26,14 @@
   }
 
   &.no-selected {
-    background: rgba($color-1, 0.70);
+    background: rgba($color-1, $opacity-level-semiopaque);
     color: $color-2;
-    border: rgba($color-1, 0.70);
+    border: rgba($color-1, $opacity-level-semiopaque);
 
     &.secondary {
-      background: rgba($color-2, 0.70);
+      background: rgba($color-2, $opacity-level-semiopaque);
       color: $color-1;
-      border: rgba($color-2, 0.70);
+      border: rgba($color-2, $opacity-level-semiopaque);
     }
   }
 }
