@@ -5,10 +5,13 @@
   "private": true,
   "scripts": {
     "build": "sass src/design-system.scss dist/design-system.css  --style compressed",
-    "watch": "sass --watch src/design-system.scss dist/design-system.css  --style compressed",
+    "watch": "sass --watch src/design-system.scss dist/design-system.css",
     "bump-version": "yarn version --prepatch && git push --tags"
   },
   "dependencies": {
     "sass": "^1.32.5"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
   }
 }

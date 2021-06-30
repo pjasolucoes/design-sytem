@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground</title>
+    <link rel="stylesheet" href="dist/design-system.css" />
+
+    <style>
+      body {
+        padding: 12px;
+      }
+
+      div.test-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 12px;
+        padding: 12px;
+
+        min-width: 200px;
+        width: auto;
+        height: auto;
+        min-height: 200px;
+      }
+
+      div.test-container--circular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 12px;
+        padding: 12px;
+
+        min-width: 200px;
+        max-width: 200px;
+        height: 200px;
+        min-height: 200px;
+      }
+
+      [class*='p-badge'],
+      [class*='p-tag'],
+      [class*='p-chip'] {
+        display: block !important;
+        max-width: fit-content;
+
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test-container">
+      <p class="display-bold-medium">Display / Bold / Medium</p>
+      <p class="display-bold-distant">Display / Bold / Distant</p>
+      <p class="display-semibold-medium">Display / Semibold / Medium</p>
+      <p class="display-semibold-distant">Display / Semibold / Distant</p>
+
+      <br />
+
+      <p class="xxxl-bold-medium">XXXL / Bold / Medium</p>
+      <p class="xxxl-bold-distant">XXXL / Bold / Distant</p>
+      <p class="xxxl-semibold-medium">XXXL / Semibold / Medium</p>
+      <p class="xxxl-semibold-distant">XXXL / Semibold / Distant</p>
+
+      <br />
+
+      <p class="xxl-bold-medium">XXL / Bold / Medium</p>
+      <p class="xxl-bold-distant">XXL / Bold / Distant</p>
+      <p class="xxl-semibold-medium">XXL / Semibold / Medium</p>
+      <p class="xxl-semibold-distant">XXL / Semibold / Distant</p>
+
+      <br />
+
+      <p class="xl-bold-medium">XL / Bold / Medium</p>
+      <p class="xl-bold-distant">XL / Bold / Distant</p>
+      <p class="xl-semibold-medium">XL / Semibold / Medium</p>
+      <p class="xl-semibold-distant">XL / Semibold / Distant</p>
+
+      <br />
+
+      <p class="lg-bold-medium">LG / Bold / Medium</p>
+      <p class="lg-bold-distant">LG / Bold / Distant</p>
+      <p class="lg-semibold-medium">LG / Semibold / Medium</p>
+      <p class="lg-semibold-distant">LG / Semibold / Distant</p>
+
+      <br />
+
+      <p class="md-bold-medium">MD / Bold / Medium</p>
+      <p class="md-bold-distant">MD / Bold / Distant</p>
+      <p class="md-semibold-medium">MD / Semibold / Medium</p>
+      <p class="md-semibold-distant">MD / Semibold / Distant</p>
+      <p class="md-medium-medium">MD / Medium / Medium</p>
+      <p class="md-medium-distant">MD / Medium / Distant</p>
+
+      <br />
+
+      <p class="sm-bold-medium">SM / Bold / Medium</p>
+      <p class="sm-bold-distant">SM / Bold / Distant</p>
+      <p class="sm-semibold-medium">SM / Semibold / Medium</p>
+      <p class="sm-semibold-distant">SM / Semibold / Distant</p>
+      <p class="sm-medium-medium">SM / Medium / Medium</p>
+      <p class="sm-medium-distant">SM / Medium / Distant</p>
+      <p class="sm-regular-medium">SM / Regular / Medium</p>
+      <p class="sm-regular-distant">SM / Regular / Distant</p>
+
+      <br />
+
+      <p class="xs-bold-medium">XS / Bold / Medium</p>
+      <p class="xs-bold-distant">XS / Bold / Distant</p>
+      <p class="xs-semibold-medium">XS / Semibold / Medium</p>
+      <p class="xs-semibold-distant">XS / Semibold / Distant</p>
+      <p class="xs-medium-medium">XS / Medium / Medium</p>
+      <p class="xs-medium-distant">XS / Medium / Distant</p>
+      <p class="xs-regular-medium">XS / Regular / Medium</p>
+      <p class="xs-regular-distant">XS / Regular / Distant</p>
+
+      <br />
+
+      <p class="xxs-bold-medium">XXS / Bold / Medium</p>
+      <p class="xxs-bold-distant">XXS / Bold / Distant</p>
+      <p class="xxs-semibold-medium">XXS / Semibold / Medium</p>
+      <p class="xxs-semibold-distant">XXS / Semibold / Distant</p>
+      <p class="xxs-medium-medium">XXS / Medium / Medium</p>
+      <p class="xxs-medium-distant">XXS / Medium / Distant</p>
+      <p class="xxs-regular-medium">XXS / Regular / Medium</p>
+      <p class="xxs-regular-distant">XXS / Regular / Distant</p>
+
+      <br />
+
+      <p class="xxxs-bold-medium">XXXS / Bold / Medium</p>
+      <p class="xxxs-bold-distant">XXXS / Bold / Distant</p>
+      <p class="xxxs-semibold-medium">XXXS / Semibold / Medium</p>
+      <p class="xxxs-semibold-distant">XXXS / Semibold / Distant</p>
+      <p class="xxxs-medium-medium">XXXS / Medium / Medium</p>
+      <p class="xxxs-medium-distant">XXXS / Medium / Distant</p>
+      <p class="xxxs-regular-medium">XXXS / Regular / Medium</p>
+      <p class="xxxs-regular-distant">XXXS / Regular / Distant</p>
+
+      <br />
+
+      <p class="caption-bold-medium">CAPTION / Bold / Medium</p>
+      <p class="caption-bold-distant">CAPTION / Bold / Distant</p>
+      <p class="caption-semibold-medium">CAPTION / Semibold / Medium</p>
+      <p class="caption-semibold-distant">CAPTION / Semibold / Distant</p>
+      <p class="caption-medium-medium">CAPTION / Medium / Medium</p>
+      <p class="caption-medium-distant">CAPTION / Medium / Distant</p>
+      <p class="caption-regular-medium">CAPTION / Regular / Medium</p>
+      <p class="caption-regular-distant">CAPTION / Regular / Distant</p>
+
+      <br />
+
+      <p class="tagline-bold-medium">TAGLINE / Bold / Medium</p>
+      <p class="tagline-bold-distant">TAGLINE / Bold / Distant</p>
+      <p class="tagline-semibold-medium">TAGLINE / Semibold / Medium</p>
+      <p class="tagline-semibold-distant">TAGLINE / Semibold / Distant</p>
+      <p class="tagline-medium-medium">TAGLINE / Medium / Medium</p>
+      <p class="tagline-medium-distant">TAGLINE / Medium / Distant</p>
+      <p class="tagline-regular-medium">TAGLINE / Regular / Medium</p>
+      <p class="tagline-regular-distant">TAGLINE / Regular / Distant</p>
+    </div>
+
+    <div
+      class="
+        test-container
+        p-border-radius-sm
+        p-border-width-medium--border-color-brand-primary-darker
+      "
+    >
+      p-border-radius-sm
+      <br />
+      p-border-width-medium--border-color-brand-primary-darker
+    </div>
+
+    <div
+      class="
+        test-container
+        p-border-radius-md
+        p-border-width-medium--border-color-brand-primary-darker
+      "
+    >
+      p-border-radius-md
+      <br />
+      p-border-width-medium--border-color-brand-primary-darker
+    </div>
+
+    <div
+      class="
+        test-container
+        p-border-radius-pill
+        p-border-width-medium--border-color-brand-primary-darker
+      "
+    >
+      p-border-radius-pill
+      <br />
+      p-border-width-medium--border-color-brand-primary-darker
+    </div>
+
+    <div
+      class="
+        test-container--circular
+        p-border-radius-circular
+        p-border-width-medium--border-color-brand-primary-darker
+      "
+    >
+      p-border-radius-circular
+      <br />
+      p-border-width-medium--border-color-brand-primary-darker
+    </div>
+
+    <hr />
+
+    <div class="teste-container">
+      <button class="p-button--small">p-button--small</button>
+      <button class="p-button">p-button</button>
+      <button class="p-button--large">p-button--large</button>
+      <button class="p-button--cta">p-button--cta</button>
+
+      <button class="p-button__secondary--small">p-button__secondary--small</button>
+      <button class="p-button__secondary">p-button__secondary</button>
+      <button class="p-button__secondary--large">p-button__secondary--large</button>
+      <button class="p-button__secondary--cta">p-button__secondary--cta</button>
+
+      <button class="p-button__tertiary--small">p-button__tertiary--small</button>
+      <button class="p-button__tertiary">p-button__tertiary</button>
+      <button class="p-button__tertiary--large">p-button__tertiary--large</button>
+      <button class="p-button__tertiary--cta">p-button__tertiary--cta</button>
+
+      <button class="p-button__danger--small">p-button__danger--small</button>
+      <button class="p-button__danger">p-button__danger</button>
+      <button class="p-button__danger--large">p-button__danger--large</button>
+      <button class="p-button__danger--cta">p-button__danger--cta</button>
+
+      <button class="p-button__warning--small">p-button__warning--small</button>
+      <button class="p-button__warning">p-button__warning</button>
+      <button class="p-button__warning--large">p-button__warning--large</button>
+      <button class="p-button__warning--cta">p-button__warning--cta</button>
+
+      <button class="p-button__info--small">p-button__info--small</button>
+      <button class="p-button__info">p-button__info</button>
+      <button class="p-button__info--large">p-button__info--large</button>
+      <button class="p-button__info--cta">p-button__info--cta</button>
+
+      <hr />
+
+      <span class="p-badge--small">p-badge--small</span>
+      <span class="p-badge">p-badge</span>
+      <span class="p-badge--large">p-badge--large</span>
+      <span class="p-badge--small-secondary">p-badge--small-secondary</span>
+      <span class="p-badge--secondary">p-badge--secondary</span>
+      <span class="p-badge--large-secondary">p-badge--large-secondary</span>
+
+      <span class="p-badge__success--small">p-badge__success--small</span>
+      <span class="p-badge__success">p-badge__success</span>
+      <span class="p-badge__success--large">p-badge__success--large</span>
+      <span class="p-badge__success--small-secondary">p-badge__success--small-secondary</span>
+      <span class="p-badge__success--secondary">p-badge__success</span>
+      <span class="p-badge__success--large-secondary">p-badge__success--large</span>
+
+      <span class="p-badge__warning--small">p-badge__warning--small</span>
+      <span class="p-badge__warning">p-badge__warning</span>
+      <span class="p-badge__warning--large">p-badge__warning--large</span>
+      <span class="p-badge__warning--small-secondary">p-badge__warning--small-secondary</span>
+      <span class="p-badge__warning--secondary">p-badge__warning</span>
+      <span class="p-badge__warning--large-secondary">p-badge__warning--large</span>
+
+      <span class="p-badge__danger--small">p-badge__danger--small</span>
+      <span class="p-badge__danger">p-badge__danger</span>
+      <span class="p-badge__danger--large">p-badge__danger--large</span>
+      <span class="p-badge__danger--small-secondary">p-badge__danger--small-secondary</span>
+      <span class="p-badge__danger--secondary">p-badge__danger</span>
+      <span class="p-badge__danger--large-secondary">p-badge__danger--large</span>
+
+      <span class="p-badge__variant--small">p-badge__variant--small</span>
+      <span class="p-badge__variant">p-badge__variant</span>
+      <span class="p-badge__variant--large">p-badge__variant--large</span>
+      <span class="p-badge__variant--small-secondary">p-badge__variant--small-secondary</span>
+      <span class="p-badge__variant--secondary">p-badge__variant</span>
+      <span class="p-badge__variant--large-secondary">p-badge__variant2--large</span>
+
+      <span class="p-badge__variant2--small">p-badge__variant2--small</span>
+      <span class="p-badge__variant2">p-badge__variant2</span>
+      <span class="p-badge__variant2--large">p-badge__variant2--large</span>
+      <span class="p-badge__variant2--small-secondary">p-badge__variant2--small-secondary</span>
+      <span class="p-badge__variant2--secondary">p-badge__variant2</span>
+      <span class="p-badge__variant2--large-secondary">p-badge__variant2--large</span>
+
+      <hr />
+
+      <span class="p-tag--small">p-tag--small</span>
+      <span class="p-tag">p-tag</span>
+      <span class="p-tag--large">p-tag--large</span>
+
+      <span class="p-tag__success--small">p-tag__success--small</span>
+      <span class="p-tag__success">p-tag__success</span>
+      <span class="p-tag__success--large">p-tag__success--large</span>
+
+      <span class="p-tag__danger--small">p-tag__danger--small</span>
+      <span class="p-tag__danger">p-tag__danger</span>
+      <span class="p-tag__danger--large">p-tag__danger--large</span>
+
+      <span class="p-tag__warning--small">p-tag__warning--small</span>
+      <span class="p-tag__warning">p-tag__warning</span>
+      <span class="p-tag__warning--large">p-tag__warning--large</span>
+
+      <span class="p-tag__disabled--small">p-tag__disabled--small</span>
+      <span class="p-tag__disabled">p-tag__disabled</span>
+      <span class="p-tag__disabled--large">p-tag__disabled--large</span>
+
+      <span class="p-tag__variant2--small">p-tag__variant2--small</span>
+      <span class="p-tag__variant2">p-tag__variant2</span>
+      <span class="p-tag__variant2--large">p-tag__variant2--large</span>
+
+      <hr />
+
+      <span class="p-chip--small">p-chip--small</span>
+      <span class="p-chip">p-chip</span>
+      <span class="p-chip--large">p-chip--large</span>
+      <span class="p-chip--small-secondary">p-chip--small-secondary</span>
+      <span class="p-chip--secondary">p-chip--secondary</span>
+      <span class="p-chip--large-secondary">p-chip--large-secondary</span>
+
+      <span class="p-chip__success--small">p-chip__success--small</span>
+      <span class="p-chip__success">p-chip__success</span>
+      <span class="p-chip__success--large">p-chip__success--large</span>
+      <span class="p-chip__success--small-secondary">p-chip__success--small-secondary</span>
+      <span class="p-chip__success--secondary">p-chip__success</span>
+      <span class="p-chip__success--large-secondary">p-chip__success--large</span>
+
+      <span class="p-chip__warning--small">p-chip__warning--small</span>
+      <span class="p-chip__warning">p-chip__warning</span>
+      <span class="p-chip__warning--large">p-chip__warning--large</span>
+      <span class="p-chip__warning--small-secondary">p-chip__warning--small-secondary</span>
+      <span class="p-chip__warning--secondary">p-chip__warning</span>
+      <span class="p-chip__warning--large-secondary">p-chip__warning--large</span>
+
+      <span class="p-chip__danger--small">p-chip__danger--small</span>
+      <span class="p-chip__danger">p-chip__danger</span>
+      <span class="p-chip__danger--large">p-chip__danger--large</span>
+      <span class="p-chip__danger--small-secondary">p-chip__danger--small-secondary</span>
+      <span class="p-chip__danger--secondary">p-chip__danger</span>
+      <span class="p-chip__danger--large-secondary">p-chip__danger--large</span>
+
+      <span class="p-chip__variant--small">p-chip__variant--small</span>
+      <span class="p-chip__variant">p-chip__variant</span>
+      <span class="p-chip__variant--large">p-chip__variant--large</span>
+      <span class="p-chip__variant--small-secondary">p-chip__variant--small-secondary</span>
+      <span class="p-chip__variant--secondary">p-chip__variant</span>
+      <span class="p-chip__variant--large-secondary">p-chip__variant2--large</span>
+
+      <span class="p-chip__variant2--small">p-chip__variant2--small</span>
+      <span class="p-chip__variant2">p-chip__variant2</span>
+      <span class="p-chip__variant2--large">p-chip__variant2--large</span>
+      <span class="p-chip__variant2--small-secondary">p-chip__variant2--small-secondary</span>
+      <span class="p-chip__variant2--secondary">p-chip__variant2</span>
+      <span class="p-chip__variant2--large-secondary">p-chip__variant2--large</span>
+    </div>
+  </body>
+</html>
